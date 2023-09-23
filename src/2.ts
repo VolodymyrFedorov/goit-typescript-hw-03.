@@ -21,7 +21,7 @@ class Employee {
     protected salary: number
   ) {}
 
-  getEmployeeDetails() {
+  getEmployeeDetails(): string {
     return `Name: ${this.name}, Department: ${this.department}, Salary: ${this.salary}`;
   }
 }
@@ -31,9 +31,5 @@ class Manager extends Employee {
     super(name, department, salary + 10000);
   }
 }
-
-const nika = new Manager("Nika", "HR", 38000);
-
-nika.getEmployeeDetails();
 
 export {};
